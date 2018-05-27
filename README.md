@@ -30,14 +30,6 @@ tweet検索APIでは緯度経度と半径での指定、もしくはロケーシ
 5. 起動用pyを作成
     - `main_meguro.py` を参考
 
-## lambda 設定
-
-```
-pip install requests requests_oauthlib -t ./
-pip install geopandas -t ./
-zip -r ~/Desktop/follow-by-location-information-twitterbot.zip .*
-```
-
 ## License
 
 * MIT
