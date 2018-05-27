@@ -17,7 +17,7 @@ def get_tweets(oauth, lat, lon, r):
 
     geocode = "{},{},{}km".format(lat, lon, r)
     params = {"q": "", "geocode": geocode, "result_type": "recent", "count": 100}
-    
+
     req = requests.get(api, auth=oauth, params=params)
     tweets_json = json.loads(req.content.decode("utf-8"))
 

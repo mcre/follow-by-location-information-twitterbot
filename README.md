@@ -37,6 +37,14 @@ ACCESS_TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ACCESS_TOKEN_SECRET = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
+## lambda 設定
+
+```
+pip install requests requests_oauthlib -t ./
+pip install geopandas -t ./
+zip -r ~/Desktop/follow-by-location-information-twitterbot.zip .*
+```
+
 ## License
 
 * MIT

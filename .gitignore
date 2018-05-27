@@ -1,9 +1,10 @@
-__pycache__/
-*.py[cod]
-*$py.class
+/*/
+/*
 
-.python-version
-tmp/
-*.geojson
-test.py
-config.py
+!/.gitignore
+!/README.md
+!/LICENSE
+!/convert.py
+!/config.py
+!/main*.py
+!/data/search_meguro.csv

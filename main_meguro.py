@@ -1,6 +1,6 @@
 import core
 
-if __name__ == '__main__':
+def handler(event, context):
     core.main(
         "data/search_meguro.csv",
         "data/meguro.geojson",
