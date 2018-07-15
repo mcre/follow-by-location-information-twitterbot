@@ -25,9 +25,7 @@ tweet検索APIでは緯度経度と半径での指定、もしくはロケーシ
 3. 必要な place name を確認
     - 位置情報が `Meguro-ku` 等の場合は検索結果のbounding_boxが区のmax,minの緯度経度のため行政界をはみ出るため区名での指定も可能
     - 目黒区の場合は、`Meguro-ku`
-4. Twitter接続情報を用意
-    - 下記のような `config.py` を用意
-5. 起動用pyを作成
+4. 起動用pyを作成
     - `main_meguro.py` を参考
 
 ## License

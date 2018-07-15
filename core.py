@@ -9,9 +9,6 @@ import requests
 import requests_oauthlib
 import shapely.geometry
 
-import config as c
-
-
 def get_tweets(oauth, lat, lon, r):
     api = "https://api.twitter.com/1.1/search/tweets.json"
 
@@ -68,12 +65,13 @@ def follow(oauth, df_follow):
         print(req, req.content)
         time.sleep(60 * random.random())
 
-def main(search_loc_file, boundaries_file, specific_loc_name, top=10):
+def main(search_loc_file, boundaries_file, specific_loc_name, twitter_api_keys, top=10):
+    k = twitter_api_keys
     oa = requests_oauthlib.OAuth1(
-        c.CONSUMER_KEY,
-        c.CONSUMER_SECRET,
-        c.ACCESS_TOKEN,
-        c.ACCESS_TOKEN_SECRET
+        k["CONSUMER_KEY"],
+        k["CONSUMER_SECRET"],
+        k["ACCESS_TOKEN"],
+        k["ACCESS_TOKEN_SECRET"],
     )
 
     df_tweets = pd.DataFrame()
