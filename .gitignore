@@ -2,9 +2,10 @@
 /*
 
 !/.gitignore
+!/Jenkinsfile
 !/README.md
 !/LICENSE
 !/convert.py
-!/config.py
 !/main*.py
 !/data/search_meguro.csv
+!/requirements.txt
