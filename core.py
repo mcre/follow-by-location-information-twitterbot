@@ -34,8 +34,8 @@ def get_tweets(oauth, lat, lon, r):
                 "text": tw["text"],
                 "id": tw["id"],
                 "date": datetime.datetime.strptime(tw["created_at"], "%a %b %d %H:%M:%S %z %Y"),
-                "location_name": tw["place"]["name"],
-                "coordinates": [tw["place"]["bounding_box"]["coordinates"][0]],
+                "location_name": tw["place"]["name"] if tw.get("place") else "",
+                "coordinates": [tw["place"]["bounding_box"]["coordinates"][0]] if tw.get("place") else [],
             })
         )
     return ret
